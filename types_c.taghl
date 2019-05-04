@@ -1,0 +1,6 @@
+syn keyword CTagsLocalVariable symbol sym i value ch resp
+syn keyword CTagsGlobalVariable usartTxBuffer parserBufferCount rxBufferCount rxBufferHead txBufferHead txBufferTail txBufferCount argv rxBufferTail usartRxBuffer wordFlag argc parserBuffer
+syn keyword CTagsEnumerationValue TRUE FALSE
+syn keyword CTagsFunction UsartInit Motor1Revers ListenUsart Motor1Forward ParserEqualStringFlash Motor2Forward Motor1Stop UsartGetChar ParserHandler ParserInit Motro2Blocking UsartFlushTxBuffer Motro1Blocking ParserStringToUchar UsartPutChar ParserParse Motor2Revers UsartSendString UsartGetRxCount UsartSendStringFlash ISR ParserStringToUint ParserEqualString Motor2Stop Init main
+syn keyword CTagsDefinedName MOT2_EN LED_PORT MOT1_IN2 SIZE_RECEIVE_BUFFER USART_TX_BUFFER_SIZE MAIN_INC MOT1_DDR MOT2_IN1 LED_PIN MOT2_PIN MOT2_PORT MOT2_IN2 BAUD AMOUNT_PAIR MOT1_PIN _DEBUG MOT2_DDR MOT1_EN LED_DDR F_CPU MYUBRR USART_INC USART_RX_BUFFER_SIZE LED MOT1_PORT PARSER_INC MOT1_IN1
+

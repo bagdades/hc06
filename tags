@@ -1,0 +1,105 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AMOUNT_PAIR	parser.h	8;"	d
+AS	Makefile	/^AS = avr-gcc$/;"	m
+BAUD	usart.h	9;"	d
+CC	Makefile	/^CC = avr-gcc$/;"	m
+CP	Makefile	/^CP = avr-objcopy$/;"	m
+FALSE	parser.h	/^		FALSE = 0,$/;"	e	enum:__anon1
+F_CPU	usart.h	8;"	d
+ISR	usart.c	/^ISR(USART_RX_vect){$/;"	f
+ISR	usart.c	/^ISR(USART_TX_vect){$/;"	f
+Init	main.c	/^void Init(void)$/;"	f	signature:(void)
+LD	Makefile	/^LD = avr-gcc$/;"	m
+LED	main.h	16;"	d
+LED_DDR	main.h	15;"	d
+LED_PIN	main.h	17;"	d
+LED_PORT	main.h	14;"	d
+ListenUsart	main.c	/^void ListenUsart(void)$/;"	f	signature:(void)
+MAIN_INC	main.h	2;"	d
+MCU	Makefile	/^MCU = mcu=atmega328p$/;"	m
+MOT1_DDR	main.h	20;"	d
+MOT1_EN	main.h	24;"	d
+MOT1_IN1	main.h	22;"	d
+MOT1_IN2	main.h	23;"	d
+MOT1_PIN	main.h	21;"	d
+MOT1_PORT	main.h	19;"	d
+MOT2_DDR	main.h	27;"	d
+MOT2_EN	main.h	31;"	d
+MOT2_IN1	main.h	29;"	d
+MOT2_IN2	main.h	30;"	d
+MOT2_PIN	main.h	28;"	d
+MOT2_PORT	main.h	26;"	d
+MYUBRR	usart.h	10;"	d
+Motor1Forward	main.c	/^void Motor1Forward(void)$/;"	f	signature:(void)
+Motor1Revers	main.c	/^void Motor1Revers(void)$/;"	f	signature:(void)
+Motor1Stop	main.c	/^void Motor1Stop(void)$/;"	f	signature:(void)
+Motor2Forward	main.c	/^void Motor2Forward(void)$/;"	f	signature:(void)
+Motor2Revers	main.c	/^void Motor2Revers(void)$/;"	f	signature:(void)
+Motor2Stop	main.c	/^void Motor2Stop(void)$/;"	f	signature:(void)
+Motro1Blocking	main.c	/^void Motro1Blocking(void)$/;"	f	signature:(void)
+Motro2Blocking	main.c	/^void Motro2Blocking(void)$/;"	f	signature:(void)
+OD	Makefile	/^OD = avr-objdump$/;"	m
+PARSER_INC	parser.h	2;"	d
+ParserEqualString	parser.c	/^uint8_t ParserEqualString(char *str1, char *str2)$/;"	f	signature:(char *str1, char *str2)
+ParserEqualString	parser.h	/^uint8_t ParserEqualString(char *str1, char *str2);$/;"	p	signature:(char *str1, char *str2)
+ParserEqualStringFlash	parser.c	/^uint8_t ParserEqualStringFlash(char *str1, const char *str2)$/;"	f	signature:(char *str1, const char *str2)
+ParserEqualStringFlash	parser.h	/^uint8_t ParserEqualStringFlash(char *str1, const char *str2);$/;"	p	signature:(char *str1, const char *str2)
+ParserHandler	main.c	/^void ParserHandler(uint8_t argc, char *argv[])$/;"	f	signature:(uint8_t argc, char *argv[])
+ParserHandler	parser.h	/^extern void ParserHandler(uint8_t argc, char *argv[]);$/;"	p	signature:(uint8_t argc, char *argv[])
+ParserInit	parser.c	/^void ParserInit(void)$/;"	f	signature:(void)
+ParserInit	parser.h	/^void ParserInit(void);$/;"	p	signature:(void)
+ParserParse	parser.c	/^void ParserParse(char chr)$/;"	f	signature:(char chr)
+ParserParse	parser.h	/^void ParserParse(char chr);$/;"	p	signature:(char chr)
+ParserStringToUchar	parser.c	/^uint8_t ParserStringToUchar(char *str)$/;"	f	signature:(char *str)
+ParserStringToUchar	parser.h	/^uint8_t ParserStringToUchar(char *str);$/;"	p	signature:(char *str)
+ParserStringToUint	parser.c	/^uint16_t ParserStringToUint(char *str)$/;"	f	signature:(char *str)
+ParserStringToUint	parser.h	/^uint16_t ParserStringToUint(char *str);$/;"	p	signature:(char *str)
+RM	Makefile	/^RM = rm$/;"	m
+SIZE_RECEIVE_BUFFER	parser.h	7;"	d
+SZ	Makefile	/^SZ = avr-size$/;"	m
+TARGET	Makefile	/^TARGET = hc06$/;"	m
+TRUE	parser.h	/^		TRUE$/;"	e	enum:__anon1
+USART_INC	usart.h	2;"	d
+USART_RX_BUFFER_SIZE	usart.h	13;"	d
+USART_TX_BUFFER_SIZE	usart.h	12;"	d
+UsartFlushTxBuffer	usart.c	/^void UsartFlushTxBuffer(void)$/;"	f	signature:(void)
+UsartFlushTxBuffer	usart.h	/^void UsartFlushTxBuffer		(void);$/;"	p	signature:(void)
+UsartGetChar	usart.c	/^uint8_t  UsartGetChar(void){$/;"	f	signature:(void)
+UsartGetChar	usart.h	/^uint8_t UsartGetChar		(void);$/;"	p	signature:(void)
+UsartGetRxCount	usart.c	/^uint8_t UsartGetRxCount(void)$/;"	f	signature:(void)
+UsartGetRxCount	usart.h	/^uint8_t UsartGetRxCount		(void);$/;"	p	signature:(void)
+UsartInit	usart.c	/^void UsartInit(uint16_t ubrr){$/;"	f	signature:(uint16_t ubrr)
+UsartInit	usart.h	/^void UsartInit				(uint16_t baudRate);$/;"	p	signature:(uint16_t baudRate)
+UsartPutChar	usart.c	/^void UsartPutChar(char ch){$/;"	f	signature:(char ch)
+UsartPutChar	usart.h	/^void UsartPutChar			(char ch);$/;"	p	signature:(char ch)
+UsartSendString	usart.c	/^void UsartSendString(char *string){$/;"	f	signature:(char *string)
+UsartSendString	usart.h	/^void UsartSendString		(char *string);$/;"	p	signature:(char *string)
+UsartSendStringFlash	usart.c	/^void UsartSendStringFlash(const char *string)$/;"	f	signature:(const char *string)
+UsartSendStringFlash	usart.h	/^void UsartSendStringFlash	(const char *string);$/;"	p	signature:(const char *string)
+_DEBUG	main.h	12;"	d
+argc	parser.c	/^uint8_t argc;$/;"	v
+argv	parser.c	/^char *argv[AMOUNT_PAIR];$/;"	v
+ch	usart.c	/^	uint8_t ch = 0;$/;"	l
+i	parser.c	/^	uint8_t i = 0;$/;"	l
+main	main.c	/^int main(void)$/;"	f	signature:(void)
+parserBuffer	parser.c	/^char parserBuffer[SIZE_RECEIVE_BUFFER];$/;"	v
+parserBufferCount	parser.c	/^static uint8_t parserBufferCount = 0;$/;"	v	file:
+resp	main.c	/^	uint8_t resp = 'E';$/;"	l
+rxBufferCount	usart.c	/^static volatile uint8_t rxBufferCount;$/;"	v	file:
+rxBufferHead	usart.c	/^static volatile uint8_t rxBufferHead;$/;"	v	file:
+rxBufferTail	usart.c	/^static volatile uint8_t rxBufferTail;$/;"	v	file:
+sym	usart.c	/^	char sym = pgm_read_byte(string);$/;"	l
+symbol	main.c	/^	uint8_t symbol;$/;"	l
+txBufferCount	usart.c	/^static volatile uint8_t txBufferCount;$/;"	v	file:
+txBufferHead	usart.c	/^static volatile uint8_t txBufferHead;$/;"	v	file:
+txBufferTail	usart.c	/^static volatile uint8_t txBufferTail;$/;"	v	file:
+usartRxBuffer	usart.c	/^static volatile uint8_t usartRxBuffer[USART_TX_BUFFER_SIZE];$/;"	v	file:
+usartTxBuffer	usart.c	/^static volatile uint8_t usartTxBuffer[USART_TX_BUFFER_SIZE];$/;"	v	file:
+value	parser.c	/^	uint16_t value = 0;$/;"	l
+value	parser.c	/^	uint8_t value = 0;$/;"	l
+wordFlag	parser.c	/^uint8_t wordFlag = 0;$/;"	v
