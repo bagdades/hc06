@@ -5,6 +5,7 @@
 #include <avr/interrupt.h>
 
 /* Prototypes */
-void TimerInit(void);
+void Timer2Init(void);
+void Timer0Init(void);
 
 #endif   /* ----- #ifndef TIMER_INC  ----- */

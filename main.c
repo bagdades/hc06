@@ -93,6 +93,7 @@ void Motor2Revers(void)
 void ParserHandler(uint8_t argc, char *argv[])
 {
 	uint8_t resp = 'E';
+	static uint8_t outPutCompare2 = 25;
 	if(ParserEqualString(argv[0], "Stop1")) {
 		resp = 's';
 	}
@@ -143,11 +144,17 @@ void ParserHandler(uint8_t argc, char *argv[])
 #endif
 			break;
 		case 'f':
+		outPutCompare2 += 25;
+		if (outPutCompare2 < 25) outPutCompare2 = 250;
+		OCR2B = outPutCompare2;
 #ifdef _DEBUG
 			UsartSendString("Fast\r\n");
 #endif
 			break;
 		case 'S':
+		outPutCompare2 -= 25;
+		if (outPutCompare2 == 0) outPutCompare2 = 25;
+		OCR2B = outPutCompare2;
 #ifdef _DEBUG
 			UsartSendString("Slow\r\n");
 #endif
@@ -162,7 +169,8 @@ int main(void)
 {
 	/* uint8_t tmp; */
 	Init();
-	TimerInit();
+	Timer2Init();
+	Timer0Init();
 	UsartInit(MYUBRR);
 	sei();
 	UsartSendString("Hello to HC-06!\r\n");

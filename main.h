@@ -21,7 +21,7 @@
 #define MOT1_DDR		DDRD
 #define MOT1_PIN		PIND
 #define MOT1_IN1		PD4
-#define MOT1_IN2		PD5
+#define MOT1_IN2		PB2
 #define MOT1_EN			PD3
 
 #define MOT2_PORT		PORTB
@@ -29,6 +29,6 @@
 #define MOT2_PIN		PINB
 #define MOT2_IN1		PB0
 #define MOT2_IN2		PB1
-#define MOT2_EN			PB2
+#define MOT2_EN			PD5
 
 #endif   /* ----- #ifndef MAIN_INC  ----- */
