@@ -93,7 +93,7 @@ void Motor2Revers(void)
 void ParserHandler(uint8_t argc, char *argv[])
 {
 	uint8_t resp = 'E';
-	static uint8_t outPutCompare2 = 25;
+	static uint8_t outPutCompare2 = 250;
 	if(ParserEqualString(argv[0], "Stop1")) {
 		resp = 's';
 	}
