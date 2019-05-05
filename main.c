@@ -49,7 +49,7 @@ void Motor1Stop(void)
 void Motor2Stop(void)
 {
 	MOT2_PORT &= ~((1 << MOT2_IN1) | (1 << MOT2_IN2));
-	MOT2_PORT &= ~(1 << MOT2_EN);
+	MOT1_PORT &= ~(1 << MOT2_EN);
 }
 
 void Motro1Blocking(void)
@@ -66,28 +66,24 @@ void Motor1Forward(void)
 {
 	MOT1_PORT |= (1 << MOT1_IN1);
 	MOT1_PORT &= ~(1 << MOT1_IN2);
-	MOT1_PORT |= (1 << MOT1_EN);
 }
 
 void Motor2Forward(void)
 {
 	MOT2_PORT |= (1 << MOT2_IN1);
 	MOT2_PORT &= ~(1 << MOT2_IN2);
-	MOT2_PORT |= (1 << MOT2_EN);
 }
 
 void Motor1Revers(void)
 {
 	MOT1_PORT &= ~(1 << MOT1_IN1);
 	MOT1_PORT |= (1 << MOT1_IN2);
-	MOT1_PORT |= (1 << MOT1_EN);
 }
 
 void Motor2Revers(void)
 {
 	MOT2_PORT &= ~(1 << MOT2_IN1);
 	MOT2_PORT |= (1 << MOT2_IN2);
-	MOT2_PORT |= (1 << MOT2_EN);
 }
 
 void ParserHandler(uint8_t argc, char *argv[])
