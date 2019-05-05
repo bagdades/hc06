@@ -23,11 +23,11 @@ void Init(void)
 	LED_DDR |= (1 << LED);
 	LED_PORT &= ~(1 << LED);
 	/* Motor 1 Port Init */
-	MOT1_DDR |= (1 << MOT1_IN1) | (1 << MOT1_IN2) | (1 << MOT1_EN);
+	MOT1_DDR |= (1 << MOT1_IN1) | (1 << MOT1_IN2) | (1 << MOT1_EN) | (1 << MOT2_EN);
 	MOT1_PORT &= ~((1 << MOT1_IN1) | (1 << MOT1_IN2) | (1 << MOT1_EN));
 	/* Motor 2 Port Init */
-	MOT2_DDR |= (1 << MOT2_IN1) | (1 << MOT2_IN2) | (1 << MOT2_EN);
-	MOT2_PORT &= ~((1 << MOT2_IN1) | (1 << MOT2_IN2) | (1 << MOT2_EN));
+	MOT2_DDR |= (1 << MOT2_IN1) | (1 << MOT2_IN2);
+	MOT2_PORT &= ~((1 << MOT2_IN1) | (1 << MOT2_IN2));
 }
 
 
